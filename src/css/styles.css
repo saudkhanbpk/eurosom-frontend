@@ -1,0 +1,696 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #1a64ca;
+  --secondary-color: #000000;
+  --dark-color: #001233;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.topBannerImg {
+  /* position: absolute; */
+  top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #979dac;
+}
+
+h1,
+h2 {
+  font-weight: 3000;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* header styles */
+.navbar {
+  background-color: #fff;
+  color: black;
+  height: 10N0px;
+  background: #201273;
+  background: linear-gradient(90deg, #201273, #150b5c);
+}
+
+.navbar-toggler {
+  line-height: 1;
+  color: gray;
+  background-color: transparent;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+}
+
+/* Utility Classes */
+
+/* .container {
+ max-width: 1000px;
+ margin: 0 auto;
+ overflow: auto;
+ padding: 0 40px;
+	
+} */
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: black;
+  padding: 8px;
+  margin: 0 5px;
+  color: #fff;
+  
+}
+
+.navbar a:hover {
+  /* border-bottom: 2px black solid; */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 10px;
+  height: 100%;
+  vertical-align: middle;
+  align-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* Text */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Backgrounds and colored buttons */
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color) !important;
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color) !important;
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color) !important;
+  color: #001233;
+}
+
+/* margin cross/y axis/top-bottom */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+/* margin around */
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* Padding cross/y axis/top-bottom */
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+/* Padding around */
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+/* Showcases */
+
+.showcase {
+  background-color: transparent;
+  color: whitesmoke;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  grid-template-columns: 50% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase-text {
+  animation: slideInfromLeft 1s ease-in;
+}
+
+.showcase-form {
+  /* to use top bottom left right property use position value relative or absolute */
+  position: absolute;
+  top: 110px;
+  height: 300px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  right: 20px;
+  animation: slideInfromRight 1s ease-in;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* [class*="col-"] {
+      width: 100%;
+    } */
+  .showcase-form {
+    position: relative;
+    left: 0;
+    top: 20px;
+    width: 90%;
+  }
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #979dac;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+/* .showcase::before,
+.showcase::after {
+    content: ' ';
+    position: absolute;
+    height: 160px;
+    bottom: -84px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+} */
+
+/* Statistic */
+.stats {
+  padding-top: 50px;
+  animation: slideInfromBottom 1s ease-in;
+}
+
+.stats-heading {
+  max-width: 768px;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Command Line Sectoin */
+
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 20px;
+}
+
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  /* grid-row: 1 / span 2; */
+}
+
+/* Cloud section */
+
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Programming Languages */
+.languages .flex {
+  flex-wrap: center;
+}
+
+.languages .card {
+  text-align: center;
+  transition: transform 0.2s ease-in;
+  margin: 18px 10px 40px;
+}
+
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+/* Features */
+.features-head img,
+.docs-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.features-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+.features-main .card > i {
+  margin-right: 20px;
+}
+
+.features-main .grid {
+  padding: 30px;
+}
+
+.features-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+}
+
+.features-main .grid > *:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+/* Footer */
+.footer .social a {
+  margin: 0 10px;
+}
+
+/* animation */
+@keyframes slideInfromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInfromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInfromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInfromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+#c {
+  position: absolute;
+  top: 100px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+/* Tavlets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid .features-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInfromTop;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInfromBottom 1s ease-in;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features-head,
+  .features-sub-head,
+  .docs-head,
+  .docs-sub-head {
+    text-align: center;
+  }
+
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img,
+  .docs-sub-head img {
+    justify-self: center;
+  }
+
+  .features-main .grid > *:first-child,
+  .features-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+
+  /* #c {
+        top: 120px;
+        width: 50%;
+    } */
+}
+
+.footer-links a {
+  padding: 5px;
+}
+
+/* New CSS */
+
+.bot-msg {
+  padding: 10px 10px;
+  /* background-color: #8E84C7; */
+  background-color: #1a64ca;
+  width: 70%;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.whatsapp-icon {
+  background-color: green;
+  width: max-content;
+  color: #fff;
+  padding: 1px 8px 5px 8px;
+  /* padding: 5px 8px; */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.insta-icon {
+  background-color: #fff;
+  width: max-content;
+  color: gray;
+  padding: 1px 8px 5px 8px;
+  /* padding: 5px 8px; */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+} */
+
+@keyframes translate-and-fade-in {
+  from {
+    opacity: 0;
+    /* transform: translateX(120px);  */
+    transform: translateY(100vh) translateX(100%);
+  }
+  to {
+    opacity: 1;
+    /* transform: translateX(0); */
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.animate-translate-and-fade-in {
+  /* animation: translate-and-fade-in 0.5s ease-in-out; */
+  /* animation: slideInfromRight 1s ease-in; */
+  /* animation: translate-and-fade-in 1s ease-in-out; */
+  animation: translate-and-fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.chat-window {
+  display: flex;
+  align-items: end;
+  margin: 20px 0px;
+}
+
+.chat-window .dp-img {
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.message {
+  display: flex;
+  padding: 12px;
+  border-top: solid 1px #ccc;
+  align-items: center;
+}
+
+.message textarea {
+  width: 80%;
+  max-height: 30px;
+  border: none;
+  resize: none;
+  outline: none;
+}
+.message textarea::-webkit-scrollbar {
+  width: 0;
+}
+.chatbot-msg-icon {
+  text-align: end;
+  cursor: pointer;
+}
+.chatbot-msg-icon span {
+  padding: 5px 10px 10px 10px;
+  background-color: #1a64ca;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px;
+}
+.chatbot-btn {
+  background-color: transparent !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff !important;
+}
+
+
+
+
+
+
+
+
+.navbar-nav .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
