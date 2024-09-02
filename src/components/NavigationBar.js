@@ -8,7 +8,7 @@ import logoIcon from "../images/chatImage/download.png";
 export default function NavigationBar() {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <div className="container flex">
+      <div className="container flex ">
         <button
           className="navbar-toggler"
           type="button"
@@ -33,7 +33,7 @@ export default function NavigationBar() {
           />
         </Link>
         <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-5">
             {/* Services Dropdown */}
             <li className="nav-item dropdown">
               <a
@@ -126,10 +126,10 @@ export default function NavigationBar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Hire an Expert
+               <Link to='/hire-developer'>Hire an Expert</Link> 
               </a>
               <ul className="dropdown-menu" aria-labelledby="hireAnExpertDropdown">
-                <li><Link className="dropdown-item  text-dark fw-bold" to="/app-developers">App Developers</Link></li>
+                <li><Link className="dropdown-item  text-dark fw-bold" to="/app-developer">App Developers</Link></li>
                 <li><Link className="dropdown-item text-dark fw-bold" to="/data-analysts">Data Analysts</Link></li>
                 <li><Link className="dropdown-item text-dark fw-bold" to="/cloud-engineers">Cloud Engineers</Link></li>
                 <li><Link className="dropdown-item text-dark fw-bold" to="/erp-odoo-consultants">ERP Odoo Consultants</Link></li>
@@ -159,7 +159,7 @@ export default function NavigationBar() {
             </li>
 
             {/* Direct Links */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="https://odoo.eurosom.com">Odoo</a>
             </li>
             <li className="nav-item">
@@ -169,7 +169,9 @@ export default function NavigationBar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="https://chatgpt.eurosom.com">ChatGPT</a>
-            </li>
+            </li> */}
+
+            <a href='/'><Link className=" text-white border rounded-pill bg-danger px-4" to="/contact-us">Contact Us</Link></a>
           </ul>
         </div>
       </div>

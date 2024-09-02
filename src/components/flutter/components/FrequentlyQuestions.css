@@ -1,0 +1,50 @@
+
+  .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .item-center h4 {
+    font-weight: normal;
+    color: #6c757d;
+  }
+  
+  .item-center h1 {
+    font-weight: bold;
+    color: #007bff; 
+  }
+  
+  .card {
+    border-left: 5px solid transparent; /* Default left border */
+    margin-bottom: 15px;
+  }
+  
+  .card.active {
+    border-left-color: #007bff; 
+  }
+  
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .fixed-btn {
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-light {
+    background-color: white;
+  }
+  
+  .btn-light:hover {
+    background-color: #f8f9fa;
+  }
+  

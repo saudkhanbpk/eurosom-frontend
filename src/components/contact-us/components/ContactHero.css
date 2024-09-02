@@ -1,0 +1,20 @@
+.custom-margin-left {
+    margin-left: 40px; 
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    min-height: calc(100vh - <footer-height>); 
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: <footer-height>;
+  }
+  

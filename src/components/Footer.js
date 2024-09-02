@@ -1,78 +1,134 @@
 import React from "react";
-import logo from "../images/eurosomlogo.jpg";
-import "../css/styles.css";
-import "../index.css";
-import { Link } from "react-router-dom";
+import LogoIcon from "../images/chatImage/download.png";
+import {
+  FaTwitter,
+  FaFacebookF,
+  FaYoutube,
+  FaGooglePlusG,
+  FaPaperPlane,
+} from "react-icons/fa";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="footer bg-dark py-5">
-      <div className="container grid grid-3">
-        <div>
-          <h1>Eurosom.com</h1>
-          <p>Copyright &copy; 2002</p>
-        </div>
-        <nav>
-          <div className="footer-links">
-            <Link to="/services">Services</Link>
-            <Link to="/solutions">Solutions</Link>
-            <a href="data-analytics" to="/data-analytics">
-              Data
-            </a>
-            <a href="https://odoo.eurosom.com">Odoo</a>
-            <a href="https://play.google.com/store/apps/details?id=com.eurosom&hl=es_419&gl=US">
-              Mobile Apps
-            </a>
-            <a href="https://chatgpt.eurosom.com">ChatGPT</a>
+    <footer className="bg-dark text-white p-5 py-4">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4 mb-3">
+            <img src={LogoIcon} alt="Lucerna Tech Logo" className="mb-2" />
+            <p>
+              Eurosom Tech designs, builds, operates, and manages custom-made
+              information security technology solutions. We have highly
+              sought-after Eurosom Tech security-related skills ranging from
+              technical certifications.
+            </p>
+            <div className="d-flex">
+              <a href="#" className="me-3 text-primary">
+                <FaTwitter size={24} />
+              </a>
+              <a href="#" className="me-3 text-primary">
+                <FaFacebookF size={24} />
+              </a>
+              <a href="#" className="me-3 text-primary">
+                <FaYoutube size={24} />
+              </a>
+              <a href="#" className="text-primary">
+                <FaGooglePlusG size={24} />
+              </a>
+            </div>
           </div>
-
-          {/* Footer Links Section */}
-          <div className="footer-links mt-4">
-            <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/terms-conditions">Terms & Conditions</Link>
-            <Link to="/careers">Careers</Link>
-            <Link to="/about-us">About Us</Link>
-            <Link to="/contact-us">Contact Us</Link>
-            <Link to="/locations">Locations</Link>
-            <ul>
-              <li><Link to="/locations/mogadishu">Mogadishu</Link></li>
-              <li><Link to="/locations/nairobi">Nairobi</Link></li>
-              <li><Link to="/locations/london">London</Link></li>
-              <li><Link to="/locations/amsterdam">Amsterdam</Link></li>
-              <li><Link to="/locations/dubai">Dubai</Link></li>
+          <div className="col-md-3 mt-5 col-sm-6 mb-3">
+            <h5>Our Services</h5>
+            <ul className="list-unstyled">
+              <li>Web Development</li>
+              <li>Mobile App Development</li>
+              <li>UI/UX Design & Branding</li>
+              <li>DevOps & IT</li>
+              <li>Big Data & Analytics</li>
+              <li>AI/ML & IoT Apps</li>
+              <li>Project Management</li>
+              <li>Cyber & Information Security</li>
+              <li>Information Management</li>
+              <li>Data Center</li>
+              <li>Business Continuity</li>
+              <li>Network & Surveillance</li>
             </ul>
-            <Link to="/sitemap">Sitemap</Link>
           </div>
-        </nav>
-
-        {/* Legal Section */}
-        <div className="legal mt-4">
-          <p>Legal</p>
-          <p>Copyright &copy; 2022 Eurosom, All Rights Reserved</p>
+          <div className="col-md-3 col-sm-6  mt-5  mb-3">
+            <h5>Our Solutions</h5>
+            <ul className="list-unstyled">
+              <li>Rapid 7</li>
+              <li>Tenable</li>
+              <li>Burp Suite</li>
+              <li>Broadcom</li>
+              <li>Forcepoint</li>
+              <li>Sophos</li>
+              <li>NetApp</li>
+            </ul>
+          </div>
+          <div className="col-md-2 col-sm-6  mt-5  mb-3">
+            <h5>Technology</h5>
+            <ul className="list-unstyled">
+              <li>.Net</li>
+              <li>Flutter</li>
+              <li>Laravel</li>
+              <li>React JS</li>
+              <li>Vue JS</li>
+              <li>Node JS</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>FIGMA</li>
+              <li>Adobe Design Suite</li>
+            </ul>
+          </div>
         </div>
-
-        {/* Social Media Links */}
-        <div className="social">
-          <a href="https://www.linkedin.com/company/1011865/admin/">
-            <i className="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="https://twitter.com/Eurosom1">
-            <i className="fa-brands fa-twitter fa-2x"></i>
-          </a>
-          <a href="https://www.facebook.com/Eurosomcloud/">
-            <i className="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="https://www.youtube.com/@eurosomso">
-            <i className="fab fa-youtube fa-2x"></i>
-          </a>
-          <a href="https://www.instagram.com/eurosomdata/">
-            <i className="fab fa-instagram fa-2x"></i>
-          </a>
-          <a href="https://www.tiktok.com/@eurosomc">
-            <i className="fa-brands fa-tiktok fa-2x"></i>
-          </a>
+        <div className="col-md-4 mb-3">
+          <h5>Join Our Newsletter</h5>
+          <form className="d-flex flex-md-row">
+            <input
+              type="email"
+              className="form-control mb-2 mb-md-0"
+              placeholder="Enter your email"
+              style={{
+                borderTopRightRadius: 0, 
+                borderBottomRightRadius: 0, 
+                flex: 1, 
+                minWidth: "0", 
+              }}
+            />
+            <span
+              className="input-group-text bg-primary"
+              style={{
+                borderTopLeftRadius: 0, 
+                borderBottomLeftRadius: 0, 
+              }}
+            >
+              <FaPaperPlane />
+            </span>
+          </form>
+        </div>
+        <div className="row mt-4">
+          <div className="col d-flex justify-content-between align-items-center">
+            <p className="mb-0">
+              Copyright © 2023 Eurosom Tech, All Rights Reserved | Designed &
+              Developed by Skynet Solutionz
+            </p>
+            <div>
+              <p className="mb-0">
+                <a href="#" className="text-white me-3">
+                  Privacy Policy
+                </a>
+                |
+                <a href="#" className="text-white ms-3">
+                  Terms & Conditions
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
