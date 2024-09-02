@@ -1,0 +1,13 @@
+/* Custom styles for carousel indicators */
+.custom-indicators {
+  bottom: -50px; /* Move indicators down */
+}
+
+.custom-indicators button {
+  background-color: #110101; /* Change dot color */
+}
+
+.custom-indicators .active {
+  background-color: #be2604; /* Change active dot color */
+  
+}
