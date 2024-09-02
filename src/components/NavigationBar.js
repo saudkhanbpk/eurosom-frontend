@@ -48,11 +48,11 @@ export default function NavigationBar() {
               </a>
               <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li><Link className="dropdown-item text-dark fw-bold" to="/cloud-services">Cloud Services</Link></li>
-                <li><Link className="dropdown-item text-dark fw-bold" to="/mobile-app-development">Mobile App Development</Link></li>
-                <li><Link className="dropdown-item text-dark fw-bold" to="/big-data-analytics">Big Data & Analytics</Link></li>
-                <li><Link className="dropdown-item text-dark fw-bold" to="/ai-ml-iot-applications">AI/ML & IoT Applications</Link></li>
-                <li><Link className="dropdown-item text-dark fw-bold" to="/cyber-security">Cyber & Information Security</Link></li>
-                <li><Link className="dropdown-item text-dark fw-bold" to="/enterprise-information-management">Enterprise Information Management</Link></li>
+                <li><Link className="dropdown-item text-dark fw-bold" to="/services/mobile-app-development">Mobile App Development</Link></li>
+                <li><Link className="dropdown-item text-dark fw-bold" to="/services/big-data-analytics">Big Data & Analytics</Link></li>
+                <li><Link className="dropdown-item text-dark fw-bold" to="/services/ai-ml-iot-applications">AI/ML & IoT Applications</Link></li>
+                <li><Link className="dropdown-item text-dark fw-bold" to="/services/cyber-security">Cyber & Information Security</Link></li>
+                <li><Link className="dropdown-item text-dark fw-bold" to="/services/enterprise-information-management">Enterprise Information Management</Link></li>
               </ul>
             </li>
 
@@ -70,7 +70,7 @@ export default function NavigationBar() {
               </a>
               <ul className="dropdown-menu" aria-labelledby="solutionsDropdown">
                 <li><Link className="dropdown-item text-dark fw-bold" to="/cloud-infrastructure">Cloud and Infrastructure</Link></li>
-                <li><Link className="dropdown-item" to="/digital-workplace">Digital Workplace</Link></li>
+                <li><Link className="dropdown-item text-dark fw-bold" to="/digital-workplace">Digital Workplace</Link></li>
                 <li><Link className="dropdown-item text-dark fw-bold" to="/technology-services">Technology Services</Link></li>
               </ul>
             </li>

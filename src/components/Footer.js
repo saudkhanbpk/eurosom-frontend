@@ -4,6 +4,7 @@ import "../css/styles.css";
 import "../index.css";
 import { Link } from "react-router-dom";
 
+
 export default function Footer() {
   return (
     <footer className="footer bg-dark py-5">

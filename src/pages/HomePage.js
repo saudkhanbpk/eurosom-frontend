@@ -14,7 +14,6 @@ import TopAnimation from "./TopAnimation";
 // import '../pages/bannerAnimation'
 import { useRef, useEffect, useState } from "react";
 import ChatPopUp from "../components/ChatPopUp";
-import Slidebar from "../components/Slidebar";
 
 export default function HomePage() {
   const [chatModal, setChatModal] = useState(false);

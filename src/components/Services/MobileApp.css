@@ -1,0 +1,48 @@
+/* Flex container hover effect */
+.flex:hover {
+  color: blue;
+}
+
+/* Background color for .bg-light-yellow */
+.bg-light-yellow {
+  background-color: #f0e6e5; 
+} 
+
+/* Styling for card text */
+.card-text {
+  color: black; /* Sets the text color to black */
+  font-size: 26px; /* Sets the font size */
+  font-weight: semibold; /* Makes the text bold */
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for card visibility */
+.card-hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Ensure the cards are positioned relative for the animation to work */
+.card {
+  position: relative;
+}
+
+/* Optional: Style for the expanded card */
+.card.expanded {
+  /* Add styles for expanded state if needed */
+}
