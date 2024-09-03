@@ -16,9 +16,9 @@ const FlutterDetails = () => {
         </div>
         {/* Column for the Text and Content */}
         <div className="col-12 col-md-7">
-          <div className="text-container">
+          <div className="text-container container-fluid">
             <p className="text-primary fw-bold mb-0">Flutter</p>
-            <p>
+            <p >
               Flutter is an open-source UI software development kit (SDK) created by Google. 
               It was first released in May 2017. Flutter allows developers to build natively 
               compiled applications for mobile, web, and desktop from a single codebase. 

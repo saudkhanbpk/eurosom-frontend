@@ -48,3 +48,23 @@
     background-color: #f8f9fa;
   }
   
+  @keyframes moveLeftToRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-move-left-to-right {
+    animation: moveLeftToRight 1s ease-out forwards;
+}

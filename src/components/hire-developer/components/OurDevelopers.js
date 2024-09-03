@@ -108,13 +108,13 @@ const OurDevelopers = () => {
     : developerData;
 
   return (
-    <div className="items-center mt-5 position-relative" style={{zIndex:2}}>
+    <div className="items-center  mt-5 position-relative" style={{zIndex:2}}>
       <div className="text-center">
         <h3>Our Developers</h3>
         <h1 className="text-primary">Unlock Your Vision - Hire a Developer Today!</h1>
       </div>
-      <div className="text-center mt-6">
-        <ul className="flex flex-wrap justify-center gap-4">
+      <div className="text-center mt-6" style={{cursor:'pointer'}}>
+        <ul className="flex flex-wrap cursor-pointer justify-center gap-4">
           {[
             ".Net",
             "Flutter",

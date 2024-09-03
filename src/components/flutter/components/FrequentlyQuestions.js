@@ -30,7 +30,7 @@ const FrequentlyQuestions = () => {
   };
 
   return (
-    <div className="container mt-4 p-3">
+    <div className="container mt-4 animate-move-left-to-right p-3" >
       <div className="text-center item-center">
         <h4>Know more</h4>
         <h1 className="fw-bold text-primary">Frequently Asked Questions</h1>

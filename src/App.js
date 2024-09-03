@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import NavigationBar from "./components/NavigationBar";
 import "./App.css";
 import HomePage from "./pages/HomePage";
@@ -18,7 +17,6 @@ import EnterpriseInformationManagement from "./components/Services/EnterpriseInf
 import Slidebar from "./components/slidebar/Slidebar";
 import Flutter from './components/flutter/components/Flutter';
 import ContactUs from './components/contact-us/components/ContactUs';
-import HireDeveloper from './components/hire-developer/components/HireDeveloper';
 import AppDeveloper from './components/hire-developer/components/AppDeveloper';
 
 function App() {
@@ -68,3 +66,12 @@ function App() {
 }
 
 export default App;
+// src/App.js
+// import { RouterProvider } from "react-router-dom";
+// import { routes } from "./routes/routes";
+
+// function App() {
+//   return <RouterProvider router={routes} />;
+// }
+
+// export default App;
