@@ -1,0 +1,30 @@
+/* Custom styles for carousel indicators */
+.custom-indicators {
+  bottom: -50px; /* Move indicators down */
+}
+
+.custom-indicators button {
+  background-color: #110101; /* Change dot color */
+}
+
+.custom-indicators .active {
+  background-color: #be2604; /* Change active dot color */
+  
+}
+
+.carousel-image {
+  max-height: 300px; /* Adjust this value as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .custom-indicators button {
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+  }
+}
