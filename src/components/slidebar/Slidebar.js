@@ -24,7 +24,7 @@ const Slidebar = () => {
   ];
 
   return (
-    <div className="container-fluid my-5  ">
+    <div className="container-fluid my-md-5  ">
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-indicators custom-indicators">
           {slidebarData.map((slide, index) => (
@@ -39,7 +39,7 @@ const Slidebar = () => {
             ></button>
           ))}
         </div>
-        <div className="carousel-inner">
+        <div className="carousel-inner mx-3 px-md-5">
           {slidebarData.map((slide, index) => (
             <div key={slide.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <div className="row mt-5 pt-4">

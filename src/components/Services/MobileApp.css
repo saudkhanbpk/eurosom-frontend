@@ -1,22 +1,11 @@
-/* Flex container hover effect */
-.flex:hover {
-  color: blue;
-}
-
 /* Background color for .bg-light-yellow */
 .bg-light-yellow {
-  background-color: #f0e6e5; 
-} 
-
-/* Styling for card text */
-.card-text {
-  color: black; /* Sets the text color to black */
-  font-size: 26px; /* Sets the font size */
-  font-weight: semibold; /* Makes the text bold */
+  background-color: #f0e6e5;
 }
 
 /* Card hover effect */
 .card {
+  position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -37,12 +26,43 @@
   transform: translateX(0);
 }
 
-/* Ensure the cards are positioned relative for the animation to work */
-.card {
-  position: relative;
+/* Styling for card text */
+.card-text {
+  color: black; /* Sets the text color to black */
+  font-size: 26px; /* Sets the font size */
+  font-weight: 600; /* Uses numerical value for semibold */
+  line-height: 1.6; /* Improved readability */
 }
 
-/* Optional: Style for the expanded card */
-.card.expanded {
-  /* Add styles for expanded state if needed */
+/* Flex container hover effect */
+.flex:hover {
+  color: blue !important;
+}
+
+/* Text hover effect */
+.text-hover {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.text-primary {
+  color: blue !important;
+}
+
+/* New CSS for alignment and spacing */
+.bg-light {
+  display: flex;
+  align-items: center;
+  background-color: #f7f0ed;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 15px;
 }
