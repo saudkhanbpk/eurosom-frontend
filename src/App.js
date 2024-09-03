@@ -14,7 +14,6 @@ import AlMLIoTApps from "./components/Services/AlMLIoTApps";
 import BigDataAnalytics from "./components/Services/Big-Data-Analytics";
 import CyberSecurity from "./components/Services/Cyber-Security";
 import EnterpriseInformationManagement from "./components/Services/EnterpriseInformationManagement";
-import Slidebar from "./components/slidebar/Slidebar";
 import Flutter from './components/flutter/components/Flutter';
 import ContactUs from './components/contact-us/components/ContactUs';
 import AppDeveloper from './components/hire-developer/components/AppDeveloper';
@@ -56,7 +55,6 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/data-analytics" element={<DataAnalytics />} />
 
-        <Route path="/slidebar" element={<Slidebar />} />
         <Route path="/flutter-programming" element={<Flutter />} />
       </Routes>
       <Footer />
