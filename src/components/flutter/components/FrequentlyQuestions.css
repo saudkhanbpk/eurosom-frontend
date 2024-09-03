@@ -14,7 +14,7 @@
     color: #007bff; 
   }
   
-  .card {
+  .card1 {
     border-left: 5px solid transparent; /* Default left border */
     margin-bottom: 15px;
   }
@@ -23,7 +23,7 @@
     border-left-color: #007bff; 
   }
   
-  .card-body {
+  .card-body1 {
     display: flex;
     justify-content: space-between;
     align-items: center;

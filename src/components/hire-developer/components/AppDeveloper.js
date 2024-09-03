@@ -18,7 +18,7 @@ const AppDeveloper = () => {
   return (
     <div>
       <Helmet>
-        <title>Hire App Developers - Expert App Development Services</title>
+        {/* <title>Hire App Developers - Expert App Development Services</title> */}
         <meta
           name="description"
           content="Hire experienced app developers for your project. We offer expert app development services to bring your ideas to life."
@@ -30,10 +30,10 @@ const AppDeveloper = () => {
         <link rel="canonical" href="https://Eurosom.com/hire-app-developer" />
       </Helmet>
       
-      <header>
+      {/* <header>
         <h1>Hire Expert App Developers</h1>
         <p>Find top-notch developers for your app development needs.</p>
-      </header>
+      </header> */}
       
       <main>
         <HireDeveloper />

@@ -13,7 +13,7 @@ const DeveloperCards = ({
   onHireClick,
 }) => {
   return (
-    <div className="row   shadow-lg bg-white border p-3 col-md-8 ">
+    <div className="row   shadow-lg bg-white border p-3 col-md-12 ">
       {/* Developer Image */}
       <img
         style={{ width: "180px", height: "150px", objectFit: "cover" }}

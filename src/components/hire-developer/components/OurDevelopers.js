@@ -144,7 +144,7 @@ const OurDevelopers = () => {
         <div className="row justify-content-center">
           {filteredDevelopers.length > 0 ? (
             filteredDevelopers.map((developer, index) => (
-              <div key={index} className="col-12 gap-0 col-md-4 mb-4">
+              <div key={index} className="col-12 gap-0 col-md-3 mb-4">
                 <DeveloperCards {...developer} />
               </div>
             ))
