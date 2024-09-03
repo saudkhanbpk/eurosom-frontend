@@ -28,8 +28,9 @@ const ContactForm = () => {
 
   return (
     <div
-      className="container mt-5"
+      className="container mt-5 position-relative"
       style={{
+        zIndex:2,
         backgroundColor: "#e8f4ff",
         padding: "20px",
         borderRadius: "10px",

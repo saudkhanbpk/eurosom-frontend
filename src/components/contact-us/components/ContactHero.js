@@ -3,7 +3,7 @@ import "./ContactHero.css";
 
 const ContactHero = () => {
   return (
-    <div className="container-fluid mt-5 hero-section d-flex align-items-center">
+    <div className="container-fluid mt-5 hero-section d-flex align-items-center position-relative"style={{zIndex:2}}>
       <div className="row">
         <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h2 className="fw-bold text-primary">Global Reach, Local Support</h2>
@@ -15,7 +15,7 @@ const ContactHero = () => {
             collaboration opportunities, we are here to assist you. Feel free to
             contact us.
           </p>
-          <button className="btn rounded-pill btn-primary">
+          <button className="btn rounded-pill btn-primary"style={{cursor:'pointer'}}>
             Contact Eurosom Tech
           </button>
         </div>

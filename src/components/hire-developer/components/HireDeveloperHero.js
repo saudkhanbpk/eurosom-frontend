@@ -3,7 +3,7 @@ import "./HireDeveloperHero.css";
 
 const HireDeveloperHero = () => {
   return (
-    <div className="container-fluid mt-5 hero-section d-flex align-items-center">
+    <div className="container-fluid position-relative mt-5 hero-section d-flex align-items-center" style={{zIndex:2}}>
       <div className="row">
         <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h2 className="fw-bold text-primary">
@@ -16,7 +16,7 @@ const HireDeveloperHero = () => {
             all at unbeatable rates. They are readily available to work in your
             preferred time zone.
           </p>
-          <button className="btn rounded-pill btn-primary">
+          <button className="btn rounded-pill btn-primary" style={{cursor:"pointer"}}>
             Hire Developer
           </button>
         </div>

@@ -1,4 +1,6 @@
+
 import React, { useRef, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import './MobileApp.css';
 import cardData from './cardData';
 
@@ -36,6 +38,20 @@ const MobileAppDevelopment = () => {
 
   return (
     <div>
+      {/* SEO Configuration */}
+      <Helmet>
+        <title>Mobile App Development Services - Comprehensive Solutions</title>
+        <meta
+          name="description"
+          content="Bring your ideas to life with our mobile app development services. We offer comprehensive solutions to build high-performance apps for your business."
+        />
+        <meta
+          name="keywords"
+          content="mobile app development, app development services, hire app developers, custom app solutions, cross-platform apps"
+        />
+        <link rel="canonical" href="https://Eurosom.com/mobile-app-development" />
+      </Helmet>
+
       <div className="container-fluid pt-5 mt-5 my-5 p-lg-5">
         <div className="row d-flex justify-content-around align-items-center">
           <div className="col-md-6 col-12">
@@ -59,12 +75,12 @@ const MobileAppDevelopment = () => {
 
       {/* Our Solution */}
       <div className="container-fluid">
-        <div className="container   ">
-          <h3 className="text-center  fw-bold">OUR SOLUTIONS</h3>
+        <div className="container">
+          <h3 className="text-center fw-bold">OUR SOLUTIONS</h3>
           <h1 className="text-center text-primary fw-bold fs-1">Comprehensive Mobile App Solutions We Address</h1>
         </div>
 
-        <div className="row  px-lg-5 d-flex justify-content-center my-5">
+        <div className="row px-lg-5 d-flex justify-content-center my-5">
           {cardData.map((item) => (
             <div
               key={item.id}
@@ -83,40 +99,39 @@ const MobileAppDevelopment = () => {
 
       {/* Detailed Solutions Section */}
       <div className="container">
-  {cardData.map((item) => (
-    <div
-      key={item.id}
-      className="card mb-3 border border-2 shadow-none rounded-0 p-0 card-hidden"
-      ref={(el) => (cardRefs.current[item.id] = el)} // Set ref for each card
-    >
-      <div className="row g-0">
-        {/* Image Section */}
-        <div
-          className="col-md-4 d-flex justify-content-center align-items-center bg-light"
-          style={{ maxWidth: '100%', height: '240px', backgroundColor: '#f7f0ed' }}
-        >
-          <img
-            src={item.imgSrc}
-            className="img-fluid"
-            alt={item.title}
-            style={{ maxWidth: '30%', height: 'auto' }}
-          />
-        </div>
+        {cardData.map((item) => (
+          <div
+            key={item.id}
+            className="card mb-3 border border-2 shadow-none rounded-0 p-0 card-hidden"
+            ref={(el) => (cardRefs.current[item.id] = el)} // Set ref for each card
+          >
+            <div className="row g-0">
+              {/* Image Section */}
+              <div
+                className="col-md-4 d-flex justify-content-center align-items-center bg-light"
+                style={{ maxWidth: '100%', height: '240px', backgroundColor: '#f7f0ed' }}
+              >
+                <img
+                  src={item.imgSrc}
+                  className="img-fluid"
+                  alt={item.title}
+                  style={{ maxWidth: '30%', height: 'auto' }}
+                />
+              </div>
 
-        {/* Text Section */}
-        <div className="col-md-8 col-12">
-          <div className="card-body-b px-2 mt-4">
-            <h5 className="card-title fw-bolder fs-4 text-primary">{item.title}</h5>
-            <p className="card-text text-dark-emphasis fw-semibold fs-5">
-              {item.description}
-            </p>
+              {/* Text Section */}
+              <div className="col-md-8 col-12">
+                <div className="card-body-b px-2 mt-4">
+                  <h5 className="card-title fw-bolder fs-4 text-primary">{item.title}</h5>
+                  <p className="card-text text-dark-emphasis fw-semibold fs-5">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    </div>
-  ))}
-</div>
-
     </div>
   );
 };
