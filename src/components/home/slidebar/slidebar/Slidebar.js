@@ -30,7 +30,7 @@ const Slidebar = () => {
   ];
 
   return (
-    <div className=" container-fluid d-flex px-lg-5  mt-md-5 mt-2 mb-5  ">
+    <div className=" container-fluid container-lg d-flex px-lg-3  mt-md-5 mt-2 mb-5  ">
       <div  id="carouselExampleIndicators" className=" carousel slide h-md-100vh" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-indicators custom-indicators">
           {slidebarData.map((slide, index) => (

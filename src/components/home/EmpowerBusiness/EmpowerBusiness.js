@@ -16,7 +16,7 @@ const EmpowerBusiness = () => {
   };
 
   return (
-    <div className='container-fluid pt-5 pb-5' style={{ background: '#ffeaed' }}>
+    <div className='container-fluid container-lg pt-5 pb-5' style={{ background: '#ffeaed' }}>
       <div className='text-center'>
         <h4>WHAT WE DO</h4>
         <h1>Explore Our Offerings and Empower Your Business!</h1>
@@ -24,7 +24,7 @@ const EmpowerBusiness = () => {
       <div className="row ">
         {/* Card Section */}
         <div 
-          className={`col-12 col-md-6 col-lg-3 border px-lg-5 mx-lg-5 card-container ${isHovered ? 'expand' : ''}`} 
+          className={`col-12 col-md-6 col-lg-3 border mx-lg-3 card-container ${isHovered ? 'expand' : ''}`} 
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

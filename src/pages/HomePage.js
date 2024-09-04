@@ -19,6 +19,8 @@ const HomePage = () => {
         <BusinessStaff/>
         </div>
       </div>
+      <EmpowerBusiness/>
+      
       <div className=" row mt-5">
         <div className="col-md-12">
         <EmpowerBusiness/>
