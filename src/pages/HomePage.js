@@ -1,8 +1,8 @@
 import React from "react";
 import Slidebar from "../components/home/slidebar/slidebar/Slidebar";
 import ChatPopUp from "../components/ChatPopUp";
-import TechStack from "../pages/technology-stack/TechStack";
 import BusinessStaff from "../components/home/BusinessStaff/BusinessStaff";
+import TechStack from "../components/home/tech-stack/components/TechStack";
 
 const HomePage = () => {
   return (
