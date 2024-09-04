@@ -30,10 +30,9 @@ const ContactForm = () => {
     <div
       className="container mt-5 position-relative"
       style={{
-        zIndex:2,
+        zIndex: 2,
         backgroundColor: "#e8f4ff",
         padding: "20px",
-        borderRadius: "10px",
       }}
     >
       <h2 className="text-center" style={{ color: "#007bff" }}>
@@ -42,14 +41,14 @@ const ContactForm = () => {
       <h4 className="text-center mb-4" style={{ color: "#007bff" }}>
         Supercharge Your Business with State-of-the-Art Services
       </h4>
-      <div className="row">
+      <div className="row ">
         <div className="col-md-6">
           <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-12 col-md-6 mb-3">
                 <input
                   type="text"
-                  className="p-2 form-control"
+                  className="p-3 form-control"
                   placeholder="Your Name"
                   name="name"
                   value={formData.name}
@@ -59,7 +58,7 @@ const ContactForm = () => {
               <div className="col-12 col-md-6 mb-3">
                 <input
                   type="email"
-                  className="p-2 form-control"
+                  className="p-3 form-control"
                   placeholder="Your Email"
                   name="email"
                   value={formData.email}
@@ -71,7 +70,7 @@ const ContactForm = () => {
               <div className="col-12 col-md-6 mb-3">
                 <input
                   type="tel"
-                  className="p-2 form-control"
+                  className="p-3 form-control"
                   placeholder="Business Phone Number"
                   name="phone"
                   value={formData.phone}
@@ -80,7 +79,7 @@ const ContactForm = () => {
               </div>
               <div className="col-12 col-md-6 mb-3">
                 <select
-                  className="p-2 form-control"
+                  className="p-3 form-control"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}

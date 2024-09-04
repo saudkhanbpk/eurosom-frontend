@@ -1,5 +1,5 @@
 import React from 'react'
-import TechStackBundles from '../../components/tech-stack/components/TechStackBundles'
+import TechStackBundles from './TechStackBundles'
 
 const TechStack = () => {
   return (

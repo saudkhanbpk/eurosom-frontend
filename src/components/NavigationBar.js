@@ -36,11 +36,11 @@ export default function NavigationBar() {
           className="collapse navbar-collapse justify-content-end"
           id="navbarTogglerDemo03"
         >
-          <ul className="navbar-nav ml-5">
+          <ul className="navbar-nav ">
             {/* Services Dropdown */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link "
                 href="#"
                 id="servicesDropdown"
                 role="button"
@@ -104,7 +104,7 @@ export default function NavigationBar() {
             {/* Solutions Dropdown */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link"
                 href="#"
                 id="solutionsDropdown"
                 role="button"
@@ -142,9 +142,12 @@ export default function NavigationBar() {
             </li>
 
             {/* Data Center Dropdown */}
-            <li className="nav-item dropdown">
+            <li className="nav-item text-nowrap dropdown">
               <a
-                className="nav-link dropdown-toggle"
+              style={{display:"flex",
+                alignItems:"center"
+              }}
+                className="nav-link d-flex  item-center"
                 href="#"
                 id="dataCenterDropdown"
                 role="button"
@@ -187,7 +190,7 @@ export default function NavigationBar() {
             {/* Technology Dropdown */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link "
                 href="#"
                 id="technologyDropdown"
                 role="button"
@@ -254,14 +257,14 @@ export default function NavigationBar() {
             {/* Hire an Expert Dropdown */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link text-nowrap"
                 href="#"
                 id="hireAnExpertDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <Link to="/hire-developer">Hire an Expert</Link>
+              Hire an Expert
               </a>
               <ul
                 className="dropdown-menu"
@@ -313,7 +316,7 @@ export default function NavigationBar() {
             {/* Learning Dropdown */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link text-nowrap"
                 href="#"
                 id="learningDropdown"
                 role="button"
@@ -379,9 +382,9 @@ export default function NavigationBar() {
               <a className="nav-link" href="https://chatgpt.eurosom.com">ChatGPT</a>
             </li> */}
 
-            <button className="bg-danger rounded-pill w-100 mt-3 mt-md-0 px-2">
+            <button className="bg-danger rounded-pill px-2">
               <Link
-                className="text-white d-block text-center"
+                className="text-white  text-center"
                 to="/contact-us"
                 style={{ textDecoration: "none" }}
               >
