@@ -7,8 +7,17 @@ import TechStack from "../components/home/tech-stack/components/TechStack";
 const HomePage = () => {
   return (
     <div className="position-relative" style={{ zIndex: 2 }}>
-      <Slidebar  />
-      <BusinessStaff/>
+     
+      <div className=" row">
+        <div className="col-md-12">
+        <Slidebar  />
+        </div>
+      </div>
+      <div className=" row mt-5">
+        <div className="col-md-12">
+        <BusinessStaff/>
+        </div>
+      </div>
       <div className=" row mt-5">
         <div className="col-md-12">
           <TechStack />

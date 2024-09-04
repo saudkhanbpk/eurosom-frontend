@@ -46,17 +46,11 @@ const FrequentlyQuestions = () => {
             openIndex === index ? "active" : ""
           }`}
         >
-          <div className="card-body1 p-2">
+          <div className="card-body1 p-3">
             <div className="flex-grow-1" onClick={() => toggleAnswer(index)}>
               <h5 className="card-title  mb-0">{item.question}</h5>
               {openIndex === index && <p className=" mt-2">{item.answer}</p>}
             </div>
-            <button
-              className="btn border-0 btn-light text-primary fixed-btn"
-              onClick={() => toggleAnswer(index)}
-            >
-              {openIndex === index ? <FaTimes /> : <FaPlus />}
-            </button>
           </div>
         </div>
       ))}
