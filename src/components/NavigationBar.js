@@ -4,7 +4,15 @@ import "../css/styles.css";
 import "../index.css";
 import { Link } from "react-router-dom";
 import logoIcon from "../images/chatImage/download.png";
-
+import {
+  AiOutlineCloud,
+  AiOutlineMobile,
+  AiOutlineBarChart,
+  AiOutlineRobot,
+  AiOutlineSafety,
+  AiOutlineDatabase,
+} from "react-icons/ai";
+import { FiCloud, FiMonitor, FiTool } from "react-icons/fi";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +50,7 @@ export default function NavigationBar() {
           />
         </Link>
         <div
-           className={`collapse navbar-collapse justify-content-end ${
+          className={`collapse navbar-collapse justify-content-end ${
             isMenuOpen ? "show" : "" // Highlight: Conditionally apply 'show' class
           }`}
           // id="navbarTogglerDemo03"
@@ -66,6 +74,7 @@ export default function NavigationBar() {
                     className="dropdown-item text-dark fw-bold"
                     to="/cloud-services"
                   >
+                    <AiOutlineCloud className="me-2 text-primary" />
                     Cloud Services
                   </Link>
                 </li>
@@ -75,6 +84,7 @@ export default function NavigationBar() {
                     to="/services/mobile-app-development"
                     onClick={closeMenu}
                   >
+                    <AiOutlineMobile className="me-2 text-primary" />
                     Mobile App Development
                   </Link>
                 </li>
@@ -84,6 +94,7 @@ export default function NavigationBar() {
                     to="/services/big-data-analytics"
                     onClick={closeMenu}
                   >
+                    <AiOutlineBarChart className="me-2 text-primary" />
                     Big Data & Analytics
                   </Link>
                 </li>
@@ -93,6 +104,7 @@ export default function NavigationBar() {
                     to="/services/ai-ml-iot-applications"
                     onClick={closeMenu}
                   >
+                    <AiOutlineRobot className="me-2 text-primary" />
                     AI/ML & IoT Applications
                   </Link>
                 </li>
@@ -102,6 +114,7 @@ export default function NavigationBar() {
                     to="/services/cyber-security"
                     onClick={closeMenu}
                   >
+                    <AiOutlineSafety className="me-2 text-primary" />
                     Cyber & Information Security
                   </Link>
                 </li>
@@ -111,6 +124,7 @@ export default function NavigationBar() {
                     to="/services/enterprise-information-management"
                     onClick={closeMenu}
                   >
+                    <AiOutlineDatabase className="me-2 text-primary" />
                     Enterprise Information Management
                   </Link>
                 </li>
@@ -121,7 +135,7 @@ export default function NavigationBar() {
             <li className="nav-item dropdown">
               <a
                 className="nav-link"
-                href="#"
+                href="/"
                 id="solutionsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -136,6 +150,7 @@ export default function NavigationBar() {
                     to="/cloud-infrastructure"
                     onClick={closeMenu}
                   >
+                    <FiCloud className="me-2 text-primary" />
                     Cloud and Infrastructure
                   </Link>
                 </li>
@@ -145,6 +160,7 @@ export default function NavigationBar() {
                     to="/digital-workplace"
                     onClick={closeMenu}
                   >
+                    <FiMonitor className="me-2 text-primary" />
                     Digital Workplace
                   </Link>
                 </li>
@@ -154,6 +170,7 @@ export default function NavigationBar() {
                     to="/technology-services"
                     onClick={closeMenu}
                   >
+                    <FiTool className="me-2 text-primary" />
                     Technology Services
                   </Link>
                 </li>
@@ -163,9 +180,7 @@ export default function NavigationBar() {
             {/* Data Center Dropdown */}
             <li className="nav-item text-nowrap dropdown">
               <a
-              style={{display:"flex",
-                alignItems:"center"
-              }}
+                style={{ display: "flex", alignItems: "center" }}
                 className="nav-link d-flex  item-center"
                 href="#"
                 id="dataCenterDropdown"
@@ -292,7 +307,7 @@ export default function NavigationBar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-              Hire an Expert
+                Hire an Expert
               </a>
               <ul
                 className="dropdown-menu"
