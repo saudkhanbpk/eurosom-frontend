@@ -20,12 +20,6 @@ const HomePage = () => {
         </div>
       </div>
       <EmpowerBusiness/>
-      
-      <div className=" row mt-5">
-        <div className="col-md-12">
-        <EmpowerBusiness/>
-        </div>
-      </div>
       <div className=" row mt-5">
         <div className="col-md-12">
           <TechStack />

@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/eurosomlogo.jpg";
 import "../css/styles.css";
 import "../index.css";
 import { Link } from "react-router-dom";
 import logoIcon from "../images/chatImage/download.png";
 
+
 export default function NavigationBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container flex ">
         <button
           className="navbar-toggler"
           type="button"
+          onClick={toggleMenu}
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
+          aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
         >
           <span>
@@ -33,8 +42,10 @@ export default function NavigationBar() {
           />
         </Link>
         <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarTogglerDemo03"
+           className={`collapse navbar-collapse justify-content-end ${
+            isMenuOpen ? "show" : "" // Highlight: Conditionally apply 'show' class
+          }`}
+          // id="navbarTogglerDemo03"
         >
           <ul className="navbar-nav ">
             {/* Services Dropdown */}
@@ -62,6 +73,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/services/mobile-app-development"
+                    onClick={closeMenu}
                   >
                     Mobile App Development
                   </Link>
@@ -70,6 +82,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/services/big-data-analytics"
+                    onClick={closeMenu}
                   >
                     Big Data & Analytics
                   </Link>
@@ -78,6 +91,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/services/ai-ml-iot-applications"
+                    onClick={closeMenu}
                   >
                     AI/ML & IoT Applications
                   </Link>
@@ -86,6 +100,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/services/cyber-security"
+                    onClick={closeMenu}
                   >
                     Cyber & Information Security
                   </Link>
@@ -94,6 +109,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/services/enterprise-information-management"
+                    onClick={closeMenu}
                   >
                     Enterprise Information Management
                   </Link>
@@ -118,6 +134,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/cloud-infrastructure"
+                    onClick={closeMenu}
                   >
                     Cloud and Infrastructure
                   </Link>
@@ -126,6 +143,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/digital-workplace"
+                    onClick={closeMenu}
                   >
                     Digital Workplace
                   </Link>
@@ -134,6 +152,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/technology-services"
+                    onClick={closeMenu}
                   >
                     Technology Services
                   </Link>
@@ -164,6 +183,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/cloud-services"
+                    onClick={closeMenu}
                   >
                     Cloud Services
                   </Link>
@@ -172,6 +192,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/co-locations"
+                    onClick={closeMenu}
                   >
                     Co-Locations
                   </Link>
@@ -180,6 +201,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/network-surveillance"
+                    onClick={closeMenu}
                   >
                     Network & Surveillance
                   </Link>
@@ -207,6 +229,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/big-data-technologies"
+                    onClick={closeMenu}
                   >
                     Big Data Technologies
                   </Link>
@@ -215,6 +238,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/microsoft-powerbi"
+                    onClick={closeMenu}
                   >
                     Microsoft PowerBI
                   </Link>
@@ -223,6 +247,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/eurosom-data-platform"
+                    onClick={closeMenu}
                   >
                     Eurosom Data Platform
                   </Link>
@@ -231,6 +256,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/erp-odoo-saas"
+                    onClick={closeMenu}
                   >
                     ERP Odoo SaaS
                   </Link>
@@ -239,6 +265,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/flutter-programming"
+                    onClick={closeMenu}
                   >
                     Flutter Programming
                   </Link>
@@ -247,6 +274,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/chatgpt-api"
+                    onClick={closeMenu}
                   >
                     ChatGPT API
                   </Link>
@@ -274,6 +302,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item  text-dark fw-bold"
                     to="/app-developer"
+                    onClick={closeMenu}
                   >
                     App Developers
                   </Link>
@@ -282,6 +311,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/data-analysts"
+                    onClick={closeMenu}
                   >
                     Data Analysts
                   </Link>
@@ -290,6 +320,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/cloud-engineers"
+                    onClick={closeMenu}
                   >
                     Cloud Engineers
                   </Link>
@@ -298,6 +329,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/erp-odoo-consultants"
+                    onClick={closeMenu}
                   >
                     ERP Odoo Consultants
                   </Link>
@@ -306,6 +338,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/ai-consultants"
+                    onClick={closeMenu}
                   >
                     AI Consultants
                   </Link>
@@ -330,6 +363,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/cloud-computing"
+                    onClick={closeMenu}
                   >
                     Cloud Computing
                   </Link>
@@ -338,6 +372,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/data-analytics"
+                    onClick={closeMenu}
                   >
                     Data Analytics
                   </Link>
@@ -346,6 +381,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/artificial-intelligence"
+                    onClick={closeMenu}
                   >
                     Artificial Intelligence
                   </Link>
@@ -354,6 +390,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/app-development"
+                    onClick={closeMenu}
                   >
                     App Development
                   </Link>
@@ -362,6 +399,7 @@ export default function NavigationBar() {
                   <Link
                     className="dropdown-item text-dark fw-bold"
                     to="/cyber-security"
+                    onClick={closeMenu}
                   >
                     Cyber Security
                   </Link>
@@ -386,6 +424,7 @@ export default function NavigationBar() {
               <Link
                 className="text-white  text-center"
                 to="/contact-us"
+                onClick={closeMenu}
                 style={{ textDecoration: "none" }}
               >
                 Contact Us
