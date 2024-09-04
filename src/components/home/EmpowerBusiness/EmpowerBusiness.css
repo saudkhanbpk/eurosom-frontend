@@ -1,28 +1,64 @@
-/* CSS for paragraph sliding up animation */
-.transition-paragraph {
-  opacity: 0;
-  transform: translateY(30px); /* Start below its normal position */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+.card-container {
+  background-color: white;
+  position: relative;
+  height: 230px; /* Set initial height */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
 }
+
+
+.transition-paragraph {
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
 
 .transition-paragraph.show {
   opacity: 1;
-  transform: translateY(0); /* Move to its normal position */
+  transform: translateY(0);
 }
 
 .transition-paragraph.hide {
   opacity: 0;
-  transform: translateY(30px); /* Return to below start position */
+  transform: translateY(20px);
 }
 
-/* CSS for card with dynamic height */
-.card-container {
-  overflow: hidden; /* Prevents content from showing outside of card */
-  height: 250px; /* Default small height */
-  transition: height 0.3s ease-in-out; /* Smooth height transition */
-  position: relative; /* Position relative for inner absolute positioning */
+.icon-rotate {
+  transition: transform 0.3s ease-in-out;
 }
 
-.card-container.expand {
-  height: 300px; /* Expanded height when paragraph is visible */
+.icon-rotate.up {
+  transform: rotate(-90deg);
+}
+
+.img-container img {
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.img-container img.shrink {
+  width: 150px; /* Reduce the image size on hover */
+}
+
+
+.transition-heading {
+  position: relative;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.transition-heading.up {
+  transform: translateY(-70px);
+}
+
+.transition-paragraph.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transition-paragraph.hide {
+  opacity: 0;
+  transform: translateY(20px);
 }

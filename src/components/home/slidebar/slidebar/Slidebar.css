@@ -1,19 +1,23 @@
 /* Custom styles for carousel indicators */
 .custom-indicators {
-  bottom: -90px; /* Move indicators down */
+  bottom: -40px; /* Move indicators down */
+}
+.largeslider {
+  height: 75vh;
 }
 
 /* Default dot border color */
 .carousel-indicators.custom-indicators button {
   background-color: transparent !important; /* Transparent background */
-  border: 2px solid currentColor !important; /* Use the color as the border color */
-  color: #444444 !important; /* Set a dark default dot color (applied to the border) */
+  border: 2px solid currentColor !important; 
+  color: #444444 !important; 
+  border-radius: 50px;
 }
 
 /* Change active dot color */
 .carousel-indicators.custom-indicators .active {
-  background-color: #be2604 !important; /* Ensure active dot color is applied */
-  border-color: #be2604 !important; /* Change the border to match active background */
+  background-color: #1106ed !important; /* Ensure active dot color is applied */
+  border-color: #2704ee !important; /* Change the border to match active background */
 }
 
 .carousel-image {
@@ -25,9 +29,18 @@
   height: 100vh;
 }
 
-@media (max-width: 767px) {
+
+
+
+@media (max-width: 1350px) {
   .custom-indicators button {
     margin-bottom: 30px;
     margin-top: 50px;
+  }
+  .largeslider {
+    height: auto;
+  }
+  .custom-indicators {
+    bottom: -90px; /* Move indicators down */
   }
 }

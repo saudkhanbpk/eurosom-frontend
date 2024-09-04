@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import './EmpowerBusiness.css';  // Ensure this file is correctly referenced
+import './EmpowerBusiness.css';
+import cardHome from './constant';
 
 const EmpowerBusiness = () => {
-  // State to manage hover effect
   const [isHovered, setIsHovered] = useState(false);
 
-  // Handlers to toggle hover state
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -21,33 +20,39 @@ const EmpowerBusiness = () => {
         <h4>WHAT WE DO</h4>
         <h1>Explore Our Offerings and Empower Your Business!</h1>
       </div>
-      <div className="row ">
-        {/* Card Section */}
-        <div 
+      <div className="row">
+       
+          <div 
           className={`col-12 col-md-6 col-lg-3 border mx-lg-3 card-container ${isHovered ? 'expand' : ''}`} 
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <div className='d-flex justify-content-center'>
+          <div className='d-flex justify-content-center img-container'>
             <img 
               src="https://api.lucerna-tech.com/storage/service-image/mJKTW8GvgUvxVKuV1xv3ukdmKxhM1IPrZ6Wrry9G.png" 
               alt="Web Development" 
-              className='img-fluid' 
+              className={`img-fluid ${isHovered ? 'shrink' : ''}`} 
               style={{ width: '200px' }} 
             />
           </div>
-          <div className='d-flex justify-content-center gap-3 mt-3'>
+          <div className={`d-flex justify-content-center gap-3 mt-3 transition-heading ${isHovered ? 'up' : ''}`}>
             <h4>Web Development</h4>
             <span> 
-              <IoIosArrowDroprightCircle size={30} /> 
+              <IoIosArrowDroprightCircle 
+                size={30} 
+                className={`icon-rotate ${isHovered ? 'up' : ''}`} 
+              /> 
             </span>
           </div>
-          {/* Paragraph content with animation classes */}
           <p className={`text-center mt-3 transition-paragraph ${isHovered ? 'show' : 'hide'}`}>
             Our skilled web developers build scalable web applications for better outreach.
           </p>
         </div>
+      
       </div>
+
+      
+
     </div>
   );
 };
