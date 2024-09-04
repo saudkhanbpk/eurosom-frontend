@@ -3,7 +3,7 @@ import './BusinessStaff.css'
 
 const BusinessStaff = () => {
   return (
-    <div>
+    <div className='mx-4'>
       <div className=" container-fluid my-5 pt-5">
         <div className='text-center'>
           <h4 className='fw-bold text-dark"'>WHO WE ARE?</h4>
