@@ -1,0 +1,28 @@
+/* CSS for paragraph sliding up animation */
+.transition-paragraph {
+  opacity: 0;
+  transform: translateY(30px); /* Start below its normal position */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.transition-paragraph.show {
+  opacity: 1;
+  transform: translateY(0); /* Move to its normal position */
+}
+
+.transition-paragraph.hide {
+  opacity: 0;
+  transform: translateY(30px); /* Return to below start position */
+}
+
+/* CSS for card with dynamic height */
+.card-container {
+  overflow: hidden; /* Prevents content from showing outside of card */
+  height: 250px; /* Default small height */
+  transition: height 0.3s ease-in-out; /* Smooth height transition */
+  position: relative; /* Position relative for inner absolute positioning */
+}
+
+.card-container.expand {
+  height: 300px; /* Expanded height when paragraph is visible */
+}

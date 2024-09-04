@@ -30,8 +30,8 @@ const Slidebar = () => {
   ];
 
   return (
-    <div className="container-fluid my-md-5 position-relative   " style={{zIndex:2}}>
-      <div  id="carouselExampleIndicators" className="carousel slide h-md-100vh" data-bs-ride="carousel" data-bs-interval="2000">
+    <div className=" container-fluid d-flex px-lg-5  mt-md-5 mt-2 mb-5  ">
+      <div  id="carouselExampleIndicators" className=" carousel slide h-md-100vh" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-indicators custom-indicators">
           {slidebarData.map((slide, index) => (
             <button
@@ -45,12 +45,12 @@ const Slidebar = () => {
             ></button>
           ))}
         </div>
-        <div className="carousel-inner mx-3 px-md-5">
+        <div className="carousel-inner ">
           {slidebarData.map((slide, index) => (
             <div key={slide.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <div className="row mt-5 pt-4">
                 <div className="col-lg-8 col-md-6 col-12">
-                  <div className="carousel-content p-4">
+                  <div className="carousel-content mt-lg-5 ">
                     <h2 className='text-primary fs-1 fw-bolder'>{slide.title}</h2>
                     <p className='fw-semibold fs-5'>{slide.description}</p>
                     <button className="btn btn-primary rounded-pill mt-3">Contact Eurosom</button>

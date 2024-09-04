@@ -1,2 +1,6 @@
-
+@media (max-width: 320px) {
+  .small {
+    flex-direction: column;
+  }
+}
 

@@ -1,15 +1,19 @@
 /* Custom styles for carousel indicators */
 .custom-indicators {
-  bottom: -50px; /* Move indicators down */
+  bottom: -70px; /* Move indicators down */
 }
 
-.custom-indicators button {
-  background-color: #110101; /* Change dot color */
+/* Default dot border color */
+.carousel-indicators.custom-indicators button {
+  background-color: transparent !important; /* Transparent background */
+  border: 2px solid currentColor !important; /* Use the color as the border color */
+  color: #444444 !important; /* Set a dark default dot color (applied to the border) */
 }
 
-.custom-indicators .active {
-  background-color: #be2604; /* Change active dot color */
-  
+/* Change active dot color */
+.carousel-indicators.custom-indicators .active {
+  background-color: #be2604 !important; /* Ensure active dot color is applied */
+  border-color: #be2604 !important; /* Change the border to match active background */
 }
 
 .carousel-image {
@@ -25,6 +29,5 @@
   .custom-indicators button {
     margin-bottom: 30px;
     margin-top: 50px;
-
   }
 }
