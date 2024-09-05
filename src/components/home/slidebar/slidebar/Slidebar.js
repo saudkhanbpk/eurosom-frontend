@@ -44,7 +44,7 @@ const Slidebar = () => {
   }, []);
 
   return (
-    <div className="container-fluid largeslider container-lg d-flex px-lg-3 mt-md-5 mt-2 mb-5" >
+    <div className="container-fluid largeslider container-lg d-flex px-lg-3 mt-md-5 mt-2 mb-5 " >
       <div id="carouselExampleIndicators" className="carousel slide h-md-100vh" data-bs-ride="carousel">
         <div className="carousel-indicators custom-indicators">
           {slidebarData.map((slide, index) => (
@@ -64,27 +64,20 @@ const Slidebar = () => {
             <div key={slide.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <div className="row mt-5 pt-4">
                 <div className="col-lg-8 col-md-6 col-12">
-                  <div className="carousel-content mt-lg-5">
+                  <div className="carousel-content  mt-lg-5 text-small">
                     <h2 className="text-primary fs-1 fw-bolder">{slide.title}</h2>
                     <p className="fw-semibold fs-5">{slide.description}</p>
                     <button className="btn btn-primary rounded-pill mt-3">Contact Eurosom</button>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6 col-12">
+                <div className="col-lg-4 col-md-6 col-12 img mt-md-5">
                   <img src={slide.image} className="d-block" alt={slide.title} />
                 </div>
               </div>
             </div>
           ))}
         </div>
-        <button className="carousel-control-prev custom-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next custom-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+        
       </div>
     </div>
   );

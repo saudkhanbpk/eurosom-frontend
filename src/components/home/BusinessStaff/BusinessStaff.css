@@ -1,9 +1,10 @@
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   .small {
     flex-direction: column;
   }
 }
 .rounded-full {
   border-radius: 30px;
+  padding: 9px;
 }
 

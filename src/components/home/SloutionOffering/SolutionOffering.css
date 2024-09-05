@@ -1,0 +1,20 @@
+.imge {
+  transition: border 0.3s ease, border-radius 0.3s ease;
+  border-radius: 10px; /* Adjust as needed for rounded corners */
+}
+
+.imge:hover {
+  border-left: 4px solid blue;
+  border-bottom: 4px solid blue;
+  border-radius: 10px; /* Ensure rounded corners remain on hover */
+}
+button {
+  transition: color 0.3s ease, border-bottom 0.3s ease, border-radius 0.3s ease;
+  border-radius: 5px; /* Adjust as needed for rounded corners */
+}
+
+button.active {
+  border-bottom: 2px solid blue;
+  color: blue;
+  border-radius: 5px; /* Ensure rounded corners on active */
+}

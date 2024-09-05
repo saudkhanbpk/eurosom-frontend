@@ -44,3 +44,14 @@
     bottom: -90px; /* Move indicators down */
   }
 }
+@media (max-width: 400px) {
+  .text-small {
+    width: 300px;
+  }
+  .carousel-image {
+    width: 50px;
+    max-height: 100px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+}

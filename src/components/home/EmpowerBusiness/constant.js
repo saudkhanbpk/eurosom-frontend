@@ -53,6 +53,24 @@ const cardHome = [
     title:'Web Development',
     para:'Our skilled web developer build scalible web applications for better reach.'
   },
+  {
+    id:10,
+    img: "https://api.lucerna-tech.com/storage/service-image/mJKTW8GvgUvxVKuV1xv3ukdmKxhM1IPrZ6Wrry9G.png",
+    title:'Web Development',
+    para:'Our skilled web developer build scalible web applications for better reach.'
+  },
+  {
+    id:11,
+    img: "https://api.lucerna-tech.com/storage/service-image/mJKTW8GvgUvxVKuV1xv3ukdmKxhM1IPrZ6Wrry9G.png",
+    title:'Web Development',
+    para:'Our skilled web developer build scalible web applications for better reach.'
+  },
+  {
+    id:12,
+    img: "https://api.lucerna-tech.com/storage/service-image/mJKTW8GvgUvxVKuV1xv3ukdmKxhM1IPrZ6Wrry9G.png",
+    title:'Web Development',
+    para:'Our skilled web developer build scalible web applications for better reach.'
+  },
 ]
 
 export default cardHome

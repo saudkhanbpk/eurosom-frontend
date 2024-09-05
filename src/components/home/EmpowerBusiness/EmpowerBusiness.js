@@ -1,58 +1,65 @@
 import React, { useState } from 'react';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import './EmpowerBusiness.css';
-import cardHome from './constant';
+import cardHome from './constant'; // Assuming cardHome is an array of objects containing card details
 
 const EmpowerBusiness = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    setHoveredIndex(null);
   };
 
   return (
-    <div className='container-fluid container-lg pt-5 pb-5' style={{ background: '#ffeaed' }}>
+    <div className='container-fluid pt-5 my-5 pb-5' style={{ backgroundColor: "#e8f4ff" }}>
       <div className='text-center'>
-        <h4>WHAT WE DO</h4>
-        <h1>Explore Our Offerings and Empower Your Business!</h1>
+        <h4 className='fw-bold'>WHAT WE DO</h4>
+        <h1 className='text-primary fs-1 fw-bolder'>Explore Our Offerings and Empower Your Business!</h1>
       </div>
-      <div className="row">
-       
-          <div 
-          className={`col-12 col-md-6 col-lg-3 border mx-lg-3 card-container ${isHovered ? 'expand' : ''}`} 
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className='d-flex justify-content-center img-container'>
-            <img 
-              src="https://api.lucerna-tech.com/storage/service-image/mJKTW8GvgUvxVKuV1xv3ukdmKxhM1IPrZ6Wrry9G.png" 
-              alt="Web Development" 
-              className={`img-fluid ${isHovered ? 'shrink' : ''}`} 
-              style={{ width: '200px' }} 
-            />
-          </div>
-          <div className={`d-flex justify-content-center gap-3 mt-3 transition-heading ${isHovered ? 'up' : ''}`}>
-            <h4>Web Development</h4>
-            <span> 
-              <IoIosArrowDroprightCircle 
-                size={30} 
-                className={`icon-rotate ${isHovered ? 'up' : ''}`} 
-              /> 
-            </span>
-          </div>
-          <p className={`text-center mt-3 transition-paragraph ${isHovered ? 'show' : 'hide'}`}>
-            Our skilled web developers build scalable web applications for better outreach.
-          </p>
+      <div className="container-lg container-fluid border">
+        <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2  g-4">
+          {/* Dynamically render cards */}
+          {cardHome.map((item, index) => (
+            <div
+              key={index}
+              className={`col ${hoveredIndex === index ? 'expand' : ''}`}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className='card-container'>
+                <div className='d-flex justify-content-center img-container' style={{ minHeight: '150px' }}>
+                  {item.img ? (
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className={`img-fluid ${hoveredIndex === index ? 'shrink' : ''}`}
+                      style={{ maxWidth: '100%', height: 'auto' }}
+                    />
+                  ) : (
+                    <div className="img-placeholder" style={{ width: '100%', height: '150px', backgroundColor: '#f0f0f0' }}></div>
+                  )}
+                </div>
+                <div className={`d-flex justify-content-center gap-3 mt-3 transition-heading ${hoveredIndex === index ? 'up' : ''}`}>
+                  <h4>{item.title}</h4>
+                  <span>
+                    <IoIosArrowDroprightCircle
+                      size={30}
+                      className={`icon-rotate ${hoveredIndex === index ? 'up' : ''}`}
+                    />
+                  </span>
+                </div>
+                <p className={`text-center mt-3 transition-paragraph ${hoveredIndex === index ? 'show' : 'hide'}`}>
+                  {item.para}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-      
       </div>
-
-      
-
     </div>
   );
 };
