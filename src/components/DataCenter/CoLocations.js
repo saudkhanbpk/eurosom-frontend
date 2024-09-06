@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import cardData from '../Services/cardData';
+import ChatPopUp from '../ChatPopUp'
 
 const CoLocations = () => {
    // Create a ref for each detailed card
@@ -36,7 +37,10 @@ const CoLocations = () => {
 
 
   return (
-    <div>
+   <>
+   <ChatPopUp/>
+
+   <div>
       {/* SEO Configuration */}
       <Helmet>
         <title>Mobile App Development Services - Comprehensive Solutions</title>
@@ -132,6 +136,7 @@ const CoLocations = () => {
         ))}
       </div>
     </div>
+   </>
   )
 }
 
