@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './MobileApp.css';
 import cardData from './cardData';
+import ChatPopUp from '../ChatPopUp';
 
 const MobileAppDevelopment = () => {
   // Create a ref for each detailed card
@@ -37,6 +38,8 @@ const MobileAppDevelopment = () => {
   }, []);
 
   return (
+    <>
+    <ChatPopUp/>
     <div>
       {/* SEO Configuration */}
       <Helmet>
@@ -133,6 +136,7 @@ const MobileAppDevelopment = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

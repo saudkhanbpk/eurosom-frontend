@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import cardData from '../Services/cardData';
+import ChatPopUp from '../ChatPopUp';
 
 const EurosomDataPlatform = () => {
   // Create a ref for each detailed card
@@ -35,6 +36,9 @@ const EurosomDataPlatform = () => {
   }, []);
 
   return (
+    <>
+    <ChatPopUp/>
+
     <div>
       {/* SEO Configuration */}
       <Helmet>
@@ -131,6 +135,7 @@ const EurosomDataPlatform = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

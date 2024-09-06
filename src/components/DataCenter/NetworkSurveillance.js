@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import cardData from '../Services/cardData';
+import ChatPopUp from '../ChatPopUp';
 
 const NetworkSurveillance = () => {
   // Create a ref for each detailed card
@@ -36,6 +37,9 @@ const NetworkSurveillance = () => {
 
 
   return (
+    <>
+    <ChatPopUp/>
+
     <div>
       {/* SEO Configuration */}
       <Helmet>
@@ -132,6 +136,7 @@ const NetworkSurveillance = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

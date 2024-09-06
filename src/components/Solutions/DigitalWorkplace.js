@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import cardData from '../Services/cardData';
+import ChatPopUp from '../ChatPopUp';
 
 const DigitalWorkplace = () => {
    // Create a ref for each detailed card
@@ -36,6 +37,8 @@ const DigitalWorkplace = () => {
 
 
   return (
+    <>
+    <ChatPopUp/>
     <div>
       {/* SEO Configuration */}
       <Helmet>
@@ -132,6 +135,7 @@ const DigitalWorkplace = () => {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './MobileApp.css';
 import cardData from './cardData';
+import ChatPopUp from '../ChatPopUp';
 
 
 const CyberSecurity = () => {
@@ -40,6 +41,8 @@ const CyberSecurity = () => {
 
 
   return (
+    <>
+    <ChatPopUp/>
     <div>
     {/* SEO Configuration */}
     <Helmet>
@@ -136,6 +139,8 @@ const CyberSecurity = () => {
       ))}
     </div>
   </div>
+    </>
+    
   )
 }
 
