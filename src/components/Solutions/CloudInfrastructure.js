@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import cardData from '../Services/cardData';
+import cardData from '../../components/Services/cardData'
 import ChatPopUp from '../ChatPopUp'
 
 const CloudInfrastructure = () => {
