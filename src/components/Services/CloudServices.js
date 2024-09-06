@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet';
 import './MobileApp.css';
 import cardData from './cardData';
 
-
-const BigDataAnalytics = () => {
+const CloudServices = () => {
   // Create a ref for each detailed card
   const cardRefs = useRef([]);
+  
 
   // Function to handle scroll to the detailed card
   const scrollToCard = (id) => {
@@ -137,4 +137,4 @@ const BigDataAnalytics = () => {
   )
 }
 
-export default BigDataAnalytics
+export default CloudServices

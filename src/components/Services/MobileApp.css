@@ -29,8 +29,7 @@
 /* Styling for card text */
 .card-text {
   color: black; /* Sets the text color to black */
-  font-size: 26px; /* Sets the font size */
-  font-weight: 600; /* Uses numerical value for semibold */
+  font-size: 16px; /* Sets the font size */
   line-height: 1.6; /* Improved readability */
 }
 
@@ -65,4 +64,14 @@
 
 .card-title {
   margin-bottom: 15px;
+}
+
+
+@media (max-width: 775px) {
+  .cont-image {
+    width: 350px;
+    max-height: 300px; 
+    object-fit: cover; 
+  }
+  
 }

@@ -1,40 +1,38 @@
 import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import './MobileApp.css';
-import cardData from './cardData';
+import cardData from '../Services/cardData';
 
+const DigitalWorkplace = () => {
+   // Create a ref for each detailed card
+   const cardRefs = useRef([]);
 
-const BigDataAnalytics = () => {
-  // Create a ref for each detailed card
-  const cardRefs = useRef([]);
-
-  // Function to handle scroll to the detailed card
-  const scrollToCard = (id) => {
-    const cardElement = cardRefs.current[id];
-    if (cardElement) {
-      cardElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      cardRefs.current.forEach((card) => {
-        if (!card) return;
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          card.classList.add('card-visible');
-          card.classList.remove('card-hidden');
-        } else {
-          card.classList.add('card-hidden');
-          card.classList.remove('card-visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initialize on component mount
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+   // Function to handle scroll to the detailed card
+   const scrollToCard = (id) => {
+     const cardElement = cardRefs.current[id];
+     if (cardElement) {
+       cardElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+     }
+   };
+ 
+   useEffect(() => {
+     const handleScroll = () => {
+       cardRefs.current.forEach((card) => {
+         if (!card) return;
+         const rect = card.getBoundingClientRect();
+         if (rect.top < window.innerHeight - 100) {
+           card.classList.add('card-visible');
+           card.classList.remove('card-hidden');
+         } else {
+           card.classList.add('card-hidden');
+           card.classList.remove('card-visible');
+         }
+       });
+     };
+ 
+     window.addEventListener('scroll', handleScroll);
+     handleScroll(); // Initialize on component mount
+     return () => window.removeEventListener('scroll', handleScroll);
+   }, []);
 
 
   return (
@@ -137,4 +135,4 @@ const BigDataAnalytics = () => {
   )
 }
 
-export default BigDataAnalytics
+export default DigitalWorkplace

@@ -6,13 +6,12 @@ const EngagementModel = () => {
     <div className='container-fluid '>
       <div className="container-lg container-fluid ">
       <div className='text-center  ' >
-        <h4>OUR ENGAGEMENT MODEL</h4>
-        <h1>Experience Impactful Collaboration - Let's Connect!</h1>
-        <p>With Lucerna Tech, you can leverage our expertise, optimize your team composition, and achieve your project
-        goals efficiently and effectively</p>
+        <h4 className='fw-bold'>OUR ENGAGEMENT MODEL</h4>
+        <h1 className='fw-bolder text-primary fs-1'>Experience Impactful Collaboration - Let's Connect!</h1>
+        <p className='fs-3 '>With Lucerna Tech, you can leverage our expertise, optimize your team composition, and achieve your project goals efficiently and effectively</p>
       </div>
 
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-md-6 col-12 mt-md-5 img">
           <img src="https://www.lucerna-tech.com/assets/media/images/img6.gif" alt=""  />
         </div>
@@ -23,8 +22,8 @@ const EngagementModel = () => {
             <img src="https://www.lucerna-tech.com/assets/media/images/icone1.svg" alt="" />
             </div>
             <div>
-              <h3>Staff Augmentation</h3>
-              <p>Bridge any resource or skill gaps within your in-house IT team with our experts managed directly by you.</p>
+              <h3 className='fw-bold text-primary'>Staff Augmentation</h3>
+              <p className='fs-5'>Bridge any resource or skill gaps within your in-house IT team with our experts managed directly by you.</p>
             </div>
             
           </div>
@@ -34,8 +33,8 @@ const EngagementModel = () => {
             <img src="https://www.lucerna-tech.com/assets/media/images/icone1.svg" alt="" />
             </div>
             <div>
-              <h3>Staff Augmentation</h3>
-              <p>Bridge any resource or skill gaps within your in-house IT team with our experts managed directly by you.</p>
+              <h3 className='fw-bold text-primary'>Staff Augmentation</h3>
+              <p className='fs-5'>Bridge any resource or skill gaps within your in-house IT team with our experts managed directly by you.</p>
             </div>
             
           </div>
@@ -46,8 +45,8 @@ const EngagementModel = () => {
             <img src="https://www.lucerna-tech.com/assets/media/images/icone1.svg" alt="" />
             </div>
             <div>
-              <h3>Staff Augmentation</h3>
-              <p>Bridge any resource or skill gaps within your in-house IT team with our experts managed directly by you.</p>
+              <h3 className='fw-bold text-primary'>Staff Augmentation</h3>
+              <p className='fs-5'>Bridge any resource or skill gaps within your in-house IT team with our experts managed directly by you.</p>
             </div>
             
           </div>

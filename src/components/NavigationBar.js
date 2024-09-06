@@ -88,7 +88,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/cloud-services"
+                    to="services/cloud-services"
                   >
                     <AiOutlineCloud className="me-2 text-primary" />
                     Cloud Services
@@ -97,7 +97,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/services/mobile-app-development"
+                    to="services/mobile-app-development"
                     onClick={closeMenu}
                   >
                     <AiOutlineMobile className="me-2 text-primary" />
@@ -107,7 +107,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/services/big-data-analytics"
+                    to="services/big-data-analytics"
                     onClick={closeMenu}
                   >
                     <AiOutlineBarChart className="me-2 text-primary" />
@@ -117,7 +117,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/services/ai-ml-iot-applications"
+                    to="services/ai-ml-iot-applications"
                     onClick={closeMenu}
                   >
                     <AiOutlineRobot className="me-2 text-primary" />
@@ -127,7 +127,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/services/cyber-security"
+                    to="services/cyber-security"
                     onClick={closeMenu}
                   >
                     <AiOutlineSafety className="me-2 text-primary" />
@@ -137,7 +137,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/services/enterprise-information-management"
+                    to="services/enterprise-information-management"
                     onClick={closeMenu}
                   >
                     <AiOutlineDatabase className="me-2 text-primary" />
@@ -163,7 +163,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/cloud-infrastructure"
+                    to="solutions/cloud-infrastructure"
                     onClick={closeMenu}
                   >
                     <FiCloud className="me-2 text-primary" />
@@ -173,7 +173,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/digital-workplace"
+                    to="solutions/digital-workplace"
                     onClick={closeMenu}
                   >
                     <FiMonitor className="me-2 text-primary" />
@@ -183,7 +183,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/technology-services"
+                    to="solutions/technology-services"
                     onClick={closeMenu}
                   >
                     <FiTool className="me-2 text-primary" />
@@ -213,7 +213,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/cloud-services"
+                    to="datacenter/cloud-services"
                     onClick={closeMenu}
                   >
                     <BsCloud className="text-primary me-2" />
@@ -223,7 +223,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/co-locations"
+                    to="datacenter/co-locations"
                     onClick={closeMenu}
                   >
                     <BsFillHouseDoorFill className="text-primary me-2" />
@@ -233,7 +233,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/network-surveillance"
+                    to="datacenter/network-surveillance"
                     onClick={closeMenu}
                   >
                     <BsCameraVideo className="text-primary me-2" />
@@ -262,7 +262,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/big-data-technologies"
+                    to="technology/big-data-technologies"
                     onClick={closeMenu}
                   >
                     <BsBarChartFill className="text-primary me-2" /> Big Data
@@ -272,7 +272,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/microsoft-powerbi"
+                    to="technology/microsoft-powerbi"
                     onClick={closeMenu}
                   >
                     <BsMicrosoft className="text-primary me-2" /> Microsoft
@@ -282,7 +282,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/eurosom-data-platform"
+                    to="technology/eurosom-data-platform"
                     onClick={closeMenu}
                   >
                     <BsFillGridFill className="text-primary me-2" /> Eurosom
@@ -292,7 +292,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/erp-odoo-saas"
+                    to="technology/erp-odoo-saas"
                     onClick={closeMenu}
                   >
                     <BsTools className="text-primary me-2" /> ERP Odoo SaaS
@@ -301,7 +301,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/flutter-programming"
+                    to="technology/flutter-programming"
                     onClick={closeMenu}
                   >
                     <BsCodeSlash className="text-primary mr-2" /> Flutter
@@ -311,7 +311,7 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/chatgpt-api"
+                    to="technology/chatgpt-api"
                     onClick={closeMenu}
                   >
                     <BsFillChatLeftTextFill className="text-primary me-2" />{" "}
