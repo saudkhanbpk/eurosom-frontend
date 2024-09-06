@@ -20,7 +20,7 @@ const EmpowerBusiness = () => {
         <h4 className='fw-bold'>WHAT WE DO</h4>
         <h1 className='text-primary fs-1 fw-bolder'>Explore Our Offerings and Empower Your Business!</h1>
       </div>
-      <div className="container-lg container-fluid border">
+      <div className="container-lg container-fluid ">
         <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2  g-4">
           {/* Dynamically render cards */}
           {cardHome.map((item, index) => (
@@ -44,7 +44,7 @@ const EmpowerBusiness = () => {
                   )}
                 </div>
                 <div className={`d-flex justify-content-center gap-3 mt-3 transition-heading ${hoveredIndex === index ? 'up' : ''}`}>
-                  <h4>{item.title}</h4>
+                  <h4 className='fw-bold'>{item.title}</h4>
                   <span>
                     <IoIosArrowDroprightCircle
                       size={30}
@@ -52,7 +52,7 @@ const EmpowerBusiness = () => {
                     />
                   </span>
                 </div>
-                <p className={`text-center mt-3 transition-paragraph ${hoveredIndex === index ? 'show' : 'hide'}`}>
+                <p className={`text-center fw-bold mt-3 transition-paragraph ${hoveredIndex === index ? 'show' : 'hide'}`}>
                   {item.para}
                 </p>
               </div>

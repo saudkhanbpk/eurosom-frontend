@@ -37,6 +37,13 @@
     margin-bottom: 30px;
     margin-top: 50px;
   }
+  @media (max-width: 398px) {
+    
+      .custom-indicators  {
+        margin-left: 4px;
+      }
+    
+  }
   .largeslider {
     height: auto;
   }

@@ -53,7 +53,7 @@ const MobileAppDevelopment = () => {
       </Helmet>
 
       <div className="container-fluid pt-5 mt-5 my-5 p-lg-5">
-        <div className="row d-flex justify-content-around align-items-center">
+        <div className="row d-flex justify-content-around align-items-center ">
           <div className="col-md-6 col-12">
             <h1 className="text-primary fs-1 fw-bolder">
               Bringing your Ideas to Life with Comprehensive Mobile App Development Services
@@ -63,11 +63,11 @@ const MobileAppDevelopment = () => {
             </p>
             <button className="btn btn-primary rounded-pill mt-3">Contact Eurosom</button>
           </div>
-          <div className="col-md-4 col-12">
+          <div className="col-md-4 col-12 cont-image ">
             <img
               src="https://api.lucerna-tech.com/storage/Banner-image/sFmzPiprtr2YAIj9s2Xfd1mhM4dUGsAstExMCRoS.svg"
               alt="Illustration for Mobile App Development Services"
-              className="img-fluid"
+              className="img-fluid "
             />
           </div>
         </div>

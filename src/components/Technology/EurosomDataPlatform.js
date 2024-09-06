@@ -1,10 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import './MobileApp.css';
-import cardData from './cardData';
+import cardData from '../Services/cardData';
 
-
-const BigDataAnalytics = () => {
+const EurosomDataPlatform = () => {
   // Create a ref for each detailed card
   const cardRefs = useRef([]);
 
@@ -35,7 +33,6 @@ const BigDataAnalytics = () => {
     handleScroll(); // Initialize on component mount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
 
   return (
     <div>
@@ -137,4 +134,4 @@ const BigDataAnalytics = () => {
   )
 }
 
-export default BigDataAnalytics
+export default EurosomDataPlatform
