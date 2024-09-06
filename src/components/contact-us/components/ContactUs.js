@@ -6,17 +6,13 @@ import ContactForm from "./ContactForm";
 const ContactUs = () => {
   return (
     <div>
-      <div className="container mt-5">
-        <div className="row">
-          <div className="col-md-12">
+      <div className=" mt-5">
+      
             <ContactHero />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
+          
+     
             <ContactForm />
-          </div>
-        </div>
+          
       </div>
     </div>
   );

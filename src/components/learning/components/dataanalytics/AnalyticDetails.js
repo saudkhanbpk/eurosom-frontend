@@ -1,9 +1,9 @@
 
 import React from "react";
-import './FlutterDetails.css';
-import FlutterLogo from '../../../images/logos/flutter.svg';
+import FlutterLogo from '../../../../images/logos/flutter.svg';
 
-const FlutterDetails = () => {
+
+const AnalyticsDetails = () => {
   return (
     <div className="container-fluid mt-5 hero-section border rounded p-lg-5 d-flex align-items-center">
       <div className="row">
@@ -61,4 +61,4 @@ const FlutterDetails = () => {
   );
 };
 
-export default FlutterDetails;
+export default AnalyticsDetails;

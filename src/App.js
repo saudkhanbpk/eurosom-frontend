@@ -31,6 +31,11 @@ import MicrosoftPowerbi from "./components/Technology/MicrosoftPowerbi";
 import ErpOdooSaas from "./components/Technology/ErpOdooSaas";
 import EurosomDataPlatform from "./components/Technology/EurosomDataPlatform";
 import ChatgptApi from "./components/Technology/ChatgptApi";
+import AppDevelopment from "./components/learning/components/appdevelopment/AppDevelopment";
+import ArtificialInteligence from "./components/learning/components/artificialinteligence/ArtificialInteligence";
+import DataAnalytic from "./components/learning/components/dataanalytics/DataAnalytic";
+import CyberSecurities from "./components/learning/components/cybersecurity/CyberSecurities";
+import CloudComputings from "./components/learning/components/cloudcomputing/CloudComputings";
 
 function App() {
   return (
@@ -122,6 +127,12 @@ function App() {
         {/* about us route start */}
         <Route path="/about" element={<About />} />
         {/* about us route end */}
+        <Route path="/learning/app-development" element={<AppDevelopment />} />
+        <Route path="/learning/artificial-intiligence" element={<ArtificialInteligence />} />
+        <Route path="/learning/cloud-computing" element={<CloudComputings />} />
+        {/* <Route path="/learning/cloud-computing" element={<CloudComputing />} /> */}
+        <Route path="/learning/data-analytics" element={<DataAnalytic />} />
+        <Route path="/learning/cyberr-security" element={<CyberSecurities />} />
       </Routes>
       <Footer />
     </BrowserRouter>

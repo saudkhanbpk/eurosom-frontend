@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 
 const DeveloperCards = ({
@@ -13,14 +10,16 @@ const DeveloperCards = ({
   onHireClick,
 }) => {
   return (
-    <div className="row   shadow-lg bg-white border p-3 col-md-12 ">
+    <div className="row d-flex flex-wrap   shadow-lg bg-white border p-3 col-md-12 ">
       {/* Developer Image */}
-      <img
-        style={{ width: "180px", height: "150px", objectFit: "cover" }}
-        className="item-center ms-4 col-12 col-sm-12 col-md-6 object-cover"
-        src={imageSrc}
-        alt="Avatar"
-      />
+      <div className=" text-center">
+        <img
+          style={{ width: "180px", height: "150px", objectFit: "cover" }}
+          className="item-center col-12 col-sm-12 col-md-6 object-cover"
+          src={imageSrc}
+          alt="Avatar"
+        />
+      </div>
 
       {/* Role */}
       <div className="text-primary rounded-pill col-12 mt-0 text-center">

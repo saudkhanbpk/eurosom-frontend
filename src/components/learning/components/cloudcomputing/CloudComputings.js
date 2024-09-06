@@ -1,12 +1,14 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import FlutterHero from './FlutterHero';
-import FlutterAbout from './FlutterAbout';
-import FlutterDetails from './FlutterDetails';
-import FrequentlyQuestions from './FrequentlyQuestions';
+import CloudAbout from './CloudAbout';
+import CloudHero from './CloudHero';
+import CloudDtails from './CloudDetails';
+import CloudQuestions from './CloudQuestions';
 
-const Flutter = () => {
+
+
+const CloudComputings = () => {
   return (
     <div className="container mt-5">
       {/* SEO Configuration */}
@@ -23,28 +25,29 @@ const Flutter = () => {
         <link rel="canonical" href="https://Eurosom.com/flutter-development" />
       </Helmet>
 
+      
       <div className="row">
         <div className="col-md-12">
-          <FlutterHero />
+          <CloudHero />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12">
-          <FlutterAbout />
+          <CloudAbout />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12 col-12">
-          <FlutterDetails />
+          <CloudDtails />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12">
-          <FrequentlyQuestions />
+          <CloudQuestions />
         </div>
       </div>
     </div>
   );
 };
 
-export default Flutter;
+export default CloudComputings;

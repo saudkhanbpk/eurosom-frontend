@@ -140,7 +140,7 @@ const OurDevelopers = () => {
           ))}
         </ul>
       </div>
-      <div className="container mt-6">
+      <div className="container-fluid mt-6">
         <div className="row">
           {filteredDevelopers.length > 0 ? (
             filteredDevelopers.map((developer, index) => (
