@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import FlutterHero from './FlutterHero';
-import FlutterAbout from './FlutterAbout';
-import FlutterDetails from './FlutterDetails';
-import FrequentlyQuestions from './FrequentlyQuestions';
+import AppDevelopmentHero from './AppDevelopmentHero';
+import AppDevelopmentAbout from './AppDevelopmentAbout';
+import AppFreqAskQues from './AppFreqAskQues';
+import AppDevelopmentDetails from './AppDevelopmentDeatails';
 
-const Flutter = () => {
+const AppDevelopment = () => {
   return (
     <div className="container mt-5">
       {/* SEO Configuration */}
@@ -25,26 +25,26 @@ const Flutter = () => {
 
       <div className="row">
         <div className="col-md-12">
-          <FlutterHero />
+          <AppDevelopmentHero />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12">
-          <FlutterAbout />
+          <AppDevelopmentAbout />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12 col-12">
-          <FlutterDetails />
+          <AppDevelopmentDetails />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12">
-          <FrequentlyQuestions />
+          <AppFreqAskQues />
         </div>
       </div>
     </div>
   );
 };
 
-export default Flutter;
+export default AppDevelopment;

@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import FlutterHero from './FlutterHero';
-import FlutterAbout from './FlutterAbout';
-import FlutterDetails from './FlutterDetails';
-import FrequentlyQuestions from './FrequentlyQuestions';
+import ArtificialHero from './ArtificialHero';
+import ArtificialDetails from './ArtificialDetails';
+import ArtificialQuestions from './ArtificialQuestions';
+import ArtificialAbout from './ArtificalAbout';
 
-const Flutter = () => {
+
+const ArtificialInteligence = () => {
   return (
     <div className="container mt-5">
       {/* SEO Configuration */}
@@ -25,26 +26,26 @@ const Flutter = () => {
 
       <div className="row">
         <div className="col-md-12">
-          <FlutterHero />
+          <ArtificialHero />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12">
-          <FlutterAbout />
+          <ArtificialAbout />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12 col-12">
-          <FlutterDetails />
+          <ArtificialDetails />
         </div>
       </div>
       <div className="row">
         <div className="col-md-12">
-          <FrequentlyQuestions />
+          <ArtificialQuestions />
         </div>
       </div>
     </div>
   );
 };
 
-export default Flutter;
+export default ArtificialInteligence;

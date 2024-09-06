@@ -17,6 +17,11 @@ import EnterpriseInformationManagement from "./components/Services/EnterpriseInf
 import Flutter from './components/flutter/components/Flutter';
 import ContactUs from './components/contact-us/components/ContactUs';
 import AppDeveloper from './components/hire-developer/components/AppDeveloper';
+import AppDevelopment from "./components/learning/components/appdevelopment/AppDevelopment";
+import ArtificialInteligence from "./components/learning/components/artificialinteligence/ArtificialInteligence";
+import DataAnalytic from "./components/learning/components/dataanalytics/DataAnalytic";
+import CyberSecurities from "./components/learning/components/cybersecurity/CyberSecurities";
+import CloudComputings from "./components/learning/components/cloudcomputing/CloudComputings";
 
 function App() {
   return (
@@ -56,6 +61,12 @@ function App() {
         <Route path="/data-analytics" element={<DataAnalytics />} />
 
         <Route path="/flutter-programming" element={<Flutter />} />
+        <Route path="/learning/app-development" element={<AppDevelopment />} />
+        <Route path="/learning/artificial-intiligence" element={<ArtificialInteligence />} />
+        <Route path="/learning/cloud-computing" element={<CloudComputings />} />
+        {/* <Route path="/learning/cloud-computing" element={<CloudComputing />} /> */}
+        <Route path="/learning/data-analytics" element={<DataAnalytic />} />
+        <Route path="/learning/cyberr-security" element={<CyberSecurities />} />
       </Routes>
       <Footer />
     </BrowserRouter>

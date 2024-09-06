@@ -27,8 +27,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div
-      className="container mt-5 position-relative"
+     <div
+      className="container-fluid mt-5 position-relative"
       style={{
         zIndex: 2,
         backgroundColor: "#e8f4ff",
@@ -41,7 +41,8 @@ const ContactForm = () => {
       <h4 className="text-center mb-4" style={{ color: "#007bff" }}>
         Supercharge Your Business with State-of-the-Art Services
       </h4>
-      <div className="row ">
+      <div className="container">
+      <div className=" row">
         <div className="col-md-6">
           <form onSubmit={handleSubmit}>
             <div className="row">
@@ -130,7 +131,10 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      </div>
+      
     </div>
+  
   );
 };
 

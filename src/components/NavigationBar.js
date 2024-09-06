@@ -13,6 +13,22 @@ import {
   AiOutlineDatabase,
 } from "react-icons/ai";
 import { FiCloud, FiMonitor, FiTool } from "react-icons/fi";
+import {
+  BsBarChartFill,
+  BsCameraVideo,
+  BsCloud,
+  BsCodeSlash,
+  BsCpu,
+  BsFillChatLeftTextFill,
+  BsFillGridFill,
+  BsFillHouseDoorFill,
+  BsGraphUp,
+  BsMicrosoft,
+  BsPhone,
+  BsRobot,
+  BsShieldLock,
+  BsTools,
+} from "react-icons/bs";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -200,6 +216,7 @@ export default function NavigationBar() {
                     to="/cloud-services"
                     onClick={closeMenu}
                   >
+                    <BsCloud className="text-primary me-2" />
                     Cloud Services
                   </Link>
                 </li>
@@ -209,6 +226,7 @@ export default function NavigationBar() {
                     to="/co-locations"
                     onClick={closeMenu}
                   >
+                    <BsFillHouseDoorFill className="text-primary me-2" />
                     Co-Locations
                   </Link>
                 </li>
@@ -218,6 +236,7 @@ export default function NavigationBar() {
                     to="/network-surveillance"
                     onClick={closeMenu}
                   >
+                    <BsCameraVideo className="text-primary me-2" />
                     Network & Surveillance
                   </Link>
                 </li>
@@ -246,7 +265,8 @@ export default function NavigationBar() {
                     to="/big-data-technologies"
                     onClick={closeMenu}
                   >
-                    Big Data Technologies
+                    <BsBarChartFill className="text-primary me-2" /> Big Data
+                    Technologies
                   </Link>
                 </li>
                 <li>
@@ -255,7 +275,8 @@ export default function NavigationBar() {
                     to="/microsoft-powerbi"
                     onClick={closeMenu}
                   >
-                    Microsoft PowerBI
+                    <BsMicrosoft className="text-primary me-2" /> Microsoft
+                    PowerBI
                   </Link>
                 </li>
                 <li>
@@ -264,7 +285,8 @@ export default function NavigationBar() {
                     to="/eurosom-data-platform"
                     onClick={closeMenu}
                   >
-                    Eurosom Data Platform
+                    <BsFillGridFill className="text-primary me-2" /> Eurosom
+                    Data Platform
                   </Link>
                 </li>
                 <li>
@@ -273,7 +295,7 @@ export default function NavigationBar() {
                     to="/erp-odoo-saas"
                     onClick={closeMenu}
                   >
-                    ERP Odoo SaaS
+                    <BsTools className="text-primary me-2" /> ERP Odoo SaaS
                   </Link>
                 </li>
                 <li>
@@ -282,7 +304,8 @@ export default function NavigationBar() {
                     to="/flutter-programming"
                     onClick={closeMenu}
                   >
-                    Flutter Programming
+                    <BsCodeSlash className="text-primary mr-2" /> Flutter
+                    Programming
                   </Link>
                 </li>
                 <li>
@@ -291,6 +314,7 @@ export default function NavigationBar() {
                     to="/chatgpt-api"
                     onClick={closeMenu}
                   >
+                    <BsFillChatLeftTextFill className="text-primary me-2" />{" "}
                     ChatGPT API
                   </Link>
                 </li>
@@ -298,67 +322,8 @@ export default function NavigationBar() {
             </li>
 
             {/* Hire an Expert Dropdown */}
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link text-nowrap"
-                href="#"
-                id="hireAnExpertDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Hire an Expert
-              </a>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="hireAnExpertDropdown"
-              >
-                <li>
-                  <Link
-                    className="dropdown-item  text-dark fw-bold"
-                    to="/app-developer"
-                    onClick={closeMenu}
-                  >
-                    App Developers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item text-dark fw-bold"
-                    to="/data-analysts"
-                    onClick={closeMenu}
-                  >
-                    Data Analysts
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item text-dark fw-bold"
-                    to="/cloud-engineers"
-                    onClick={closeMenu}
-                  >
-                    Cloud Engineers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item text-dark fw-bold"
-                    to="/erp-odoo-consultants"
-                    onClick={closeMenu}
-                  >
-                    ERP Odoo Consultants
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item text-dark fw-bold"
-                    to="/ai-consultants"
-                    onClick={closeMenu}
-                  >
-                    AI Consultants
-                  </Link>
-                </li>
-              </ul>
+            <li className=" mt-2">
+              <Link to="/app-developer">Hire an Expert</Link>
             </li>
 
             {/* Learning Dropdown */}
@@ -377,46 +342,48 @@ export default function NavigationBar() {
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/cloud-computing"
+                    to="learning/cloud-computing"
                     onClick={closeMenu}
                   >
-                    Cloud Computing
+                    <BsCloud className="text-primary me-2" /> Cloud Computing
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/data-analytics"
+                    to="/learning/data-analytics"
                     onClick={closeMenu}
                   >
-                    Data Analytics
+                    <BsGraphUp className="text-primary me-2" /> Data Analytics
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/artificial-intelligence"
+                    to="/learning/artificial-intiligence"
                     onClick={closeMenu}
                   >
-                    Artificial Intelligence
+                    <BsCpu className="text-primary me-2" /> Artificial
+                    Intelligence
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/app-development"
+                    to="/learning/app-development"
                     onClick={closeMenu}
                   >
-                    App Development
+                    <BsPhone className="text-primary me-2" /> App Development
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="dropdown-item text-dark fw-bold"
-                    to="/cyber-security"
+                    to="learning/cyberr-security"
                     onClick={closeMenu}
                   >
-                    Cyber Security
+                    <BsShieldLock className="text-primary me-2" /> Cyber
+                    Security
                   </Link>
                 </li>
               </ul>
@@ -435,7 +402,7 @@ export default function NavigationBar() {
               <a className="nav-link" href="https://chatgpt.eurosom.com">ChatGPT</a>
             </li> */}
 
-            <button className="bg-danger rounded-pill px-2">
+            <button className="bg-danger col-5 col-md-2 text-nowrap rounded-pill px-2">
               <Link
                 className="text-white  text-center"
                 to="/contact-us"
